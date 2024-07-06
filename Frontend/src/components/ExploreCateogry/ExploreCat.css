@@ -1,0 +1,101 @@
+.explore-cat {
+  margin: 0 auto; /* Center the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  gap: 20px;
+  padding: 20px; /* Add padding for better spacing */
+}
+
+.explore-cat-heading {
+  color: #333;
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center; /* Center the heading text */
+  margin-bottom: 10px;
+}
+
+.explore-cat-text {
+  max-width: 60%;
+  color: #555;
+  text-align: center; /* Center the description text */
+  font-size: 16px; /* Set a default font size */
+}
+
+.explore-cat-list {
+  display: flex;
+  justify-content: center; /* Center the list horizontally */
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  margin: 20px 0px;
+  overflow-x: scroll;
+  padding: 10px; /* Add padding for better spacing */
+}
+
+.explore-cat-list::-webkit-scrollbar {
+  display: none;
+}
+
+.explore-cat-list-item img {
+  width: 10vw;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Add border radius for rounded corners */
+}
+
+.explore-cat-list-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.explore-cat-list-item p {
+  margin-top: 10px;
+  color: #808080;
+  font-size: max(1.4vw, 16px);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.explore-cat-list-item p:hover {
+  color: #555;
+}
+
+.explore-cat hr {
+  width: 80%; /* Set a width for the horizontal line */
+  margin: 20px 0; /* Adjust the margin for better spacing */
+  height: 2px;
+  background-color: #ccc; /* Ensure a visible background color */
+  border: none;
+}
+
+.explore-cat-list-item .active {
+  border: 4px solid rgb(203, 151, 151);
+  padding: 2px;
+  box-shadow: 0 0 10px rgba(203, 151, 151, 0.5);
+  border-radius: 10px; /* Match the border radius of the image */
+}
+
+/* Media Queries */
+@media (max-width: 1050px) {
+  .explore-cat-text {
+    max-width: 100%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .explore-cat-list {
+    display: grid; /* Change to grid layout */
+    grid-template-columns: repeat(4, 1fr); /* 4 columns per row */
+    gap: 20px; /* Adjust the gap for better spacing */
+    justify-items: center; /* Center items within their grid cells */
+    padding: 10px; /* Ensure padding remains for better spacing */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+
+  .explore-cat-list-item {
+    width: 22vw; /* Adjust the width for better visibility on smaller screens */
+  }
+}

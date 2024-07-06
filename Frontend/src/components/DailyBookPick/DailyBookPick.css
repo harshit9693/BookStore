@@ -1,0 +1,139 @@
+.book-of-the-day{
+  margin-left: 25px;
+  margin-top: 15px;
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.book-of-the-day h1{
+  color: #333;   
+  /* #262626 */
+  /* font-weight: 500; */
+  font-weight: 600;
+}
+
+.section-title {
+  font-size: 36px;
+  color: #b87b7b;
+  margin-bottom: 40px;
+}
+
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.book-container-left,
+.book-container-right {
+  flex: 1;
+  min-width: 300px; /* Ensures responsive design */
+}
+
+.book-cover {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+
+.book-details {
+  text-align: left;
+  padding: 0 20px;
+}
+
+.book-title {
+  font-size: 28px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.author-name {
+  font-size: 18px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.book-description {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.book-genre,
+.publication-date {
+  font-size: 14px;
+  color: #888;
+  margin: 5px 0;
+}
+
+.book-price {
+  font-size: 18px;
+  color: #e15454; /* Red color for price */
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.book-rating {
+  font-size: 16px;
+  color: #b87b7b;
+  margin: 10px 0;
+}
+
+.book-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.add-to-cart {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.go-to-cart {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4CAF50; /* Green background */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart.add {
+  background-color: #b87b7b;
+}
+
+.add-to-cart.remove {
+  background-color: #e15454; /* Red color for "Remove from Cart" */
+}
+
+.add-to-cart.add:hover {
+  background-color: #9e6a6a;
+}
+
+.add-to-cart.remove:hover {
+  background-color: #e74949; /* Darker red on hover */
+}
+.buy-now-button.remove:hover {
+  background-color: #e60000;
+}
