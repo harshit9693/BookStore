@@ -13,7 +13,7 @@ function Home() {
   return (
     <div>
       <Header />
-      <DailyBookPick bookId="6684e32ff372945a2dc54fe4" />
+      <DailyBookPick bookId="6684e0c0f372945a2dc54fc9" />
       {/* <RecentlyAdded /> */}
       <ExploreCat category={category} setCategory={setCategory} />
       <BookDisplay category={category} />
