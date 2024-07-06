@@ -10,14 +10,15 @@ const List = ({ url }) => {
   const [list, setList] = useState([]);
 
   const fetchList = async () => {
-    const response = await axios.get(`${url}/api/book/list`);
-    console.log(response.data);
+    // const response = await axios.get(`${url}/api/book/list`);
+    // console.log(response.data);
 
-    if (response.data.success) {
-      setList(response.data.data);
-    } else {
-      toast.error("Error");
-    }
+    // if (response.data.success) {
+    //   setList(response.data.data);
+    // } else {
+    //   toast.error("Error");
+    // }
+    toast.error("You are not allowed to remove");
   };
 
   const removeBook = async (bookId) => {
