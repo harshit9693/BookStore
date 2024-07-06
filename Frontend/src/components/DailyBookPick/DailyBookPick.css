@@ -137,3 +137,9 @@
 .buy-now-button.remove:hover {
   background-color: #e60000;
 }
+
+@media (max-width:768px) {
+  .book-container img{
+    max-width: 150px;
+  }
+}
