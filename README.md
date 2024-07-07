@@ -4,6 +4,11 @@
 
 BookStore is a dynamic platform where users can buy and sell old books as well as purchase new ones. The application includes user authentication, an add-to-cart option with cart data saved in the database, and the ability for users to order books once signed in. It offers various categories of books for users to explore.
 
+## Links
+
+- **User Website**: [BookStore User](https://bookstore-frontend-kzjs.onrender.com/)
+- **Admin Website**: [BookStore Admin](https://bookstore-admin-vtre.onrender.com/)
+  
 ## Environmental Impact
 
 Every year, millions of books are discarded, contributing to waste and environmental degradation. BookStore provides a solution by enabling users to sell their old books, promoting reuse, and reducing waste. By giving old books a new life, we help decrease the demand for new paper production, which in turn conserves natural resources and reduces deforestation.
@@ -51,7 +56,4 @@ During login, email and password are case sensitive.
    cd Fontend
    npm install
 
-## Links
 
-- **User Website**: [BookStore User](https://bookstore-frontend-kzjs.onrender.com/)
-- **Admin Website**: [BookStore Admin](https://bookstore-admin-vtre.onrender.com/)
